@@ -1,0 +1,135 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+   body {
+     margin: 0;
+     background-color: #111;
+     font-family: 'Poppins', sans-serif;
+     color: white;
+   }
+
+h1, h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background: #444;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.crewmate-icon {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  max-width: 60px;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 2rem;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.panel {
+  background: #555;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: left;
+  width: 250px;
+  color: white;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+}
+
+button {
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: #222;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  border: 2px solid #555;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card.Red { box-shadow: 0 0 15px #ff4d4d; }
+.card.Green { box-shadow: 0 0 15px #32cd32; }
+.card.Blue { box-shadow: 0 0 15px #1e90ff; }
+.card.Purple { box-shadow: 0 0 15px #ba55d3; }
+.card.Yellow { box-shadow: 0 0 15px #ffff66; }
+.card.Orange { box-shadow: 0 0 15px #ffa500; }
+.card.Pink { box-shadow: 0 0 15px #ff69b4; }
+
+html, body, #root {
+  height: 100%;
+}
